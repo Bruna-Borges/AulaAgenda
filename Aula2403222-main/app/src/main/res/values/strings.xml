@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aula 24–03–2-22</string>
+    <string name="nome">Nome</string>
+    <string name="altura_1_80">Altura (1,80)</string>
+    <string name="nascimento_dd_mm_aaaa">Nascimento (DD/MM/AAAA)</string>
+</resources>
