@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 
+//habilitando um objeto de uma determinada classe
 public class Personagem implements Serializable {
+    //delcarando as variaveis privadas 
     private String nome;
     private String nascimento;
     private String altura;
