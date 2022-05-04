@@ -85,10 +85,12 @@ public class FormularioPersonagemActivity extends AppCompatActivity {
     }
     private void finalizarFormulario() {
         preencherPersonagem();
+        //
         if(personagem.idValido())
         {
             dao.edita(personagem);
             finish();
+        // 
         }else {
             dao.salvar(personagem);
         }
@@ -103,10 +105,12 @@ public class FormularioPersonagemActivity extends AppCompatActivity {
 
     }
     private void preencherPersonagem() {
+       //aqui estou retornando um objeto do tipo que impossibilita a manipulação e uso o toSrting para que consiga manipular uma string
         String nome = campoNome.getText().toString();
         String nascimento = campoNascimento.getText().toString();
         String altura = campoAltura.getText().toString();
 
+        //Aqui eu estou armazenando as características do personagem 
         personagem.setNome(nome);
         personagem.setAltura(altura);
         personagem.setNascimento(nascimento);
